@@ -1,0 +1,151 @@
+.search{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 191, 191);;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+.search::placeholder{
+    font-size: 16px;
+}
+.searchlogo{
+    height: 40px;
+    width: 66px;
+    background-color:rgb(249, 249, 249) ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 191, 191) ;
+    margin-left: -1;
+    margin-right: 10px;
+}
+.searchlogo, 
+.voice,
+.uploadicon,
+.appsicon,
+.rednotification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.searchlogo .tip,
+.voice .tip,
+.uploadicon .tip,
+.appsicon .tip,
+.rednotification .tip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchlogo:hover .tip,
+.voice:hover .tip,
+.uploadicon:hover .tip,
+.appsicon:hover .tip,
+.rednotification:hover .tip{
+    opacity: 1;
+}
+.searchlogo
+.searchicon{
+    height: 25px;
+}
+.voice{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(249, 249, 249);
+}
+.voiceicon{
+    height: 24px;
+   
+}
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(224, 224, 224);
+
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.logo{
+    height: 20px
+}
+.middle{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.right{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 24px;
+}
+.apps{
+    height: 24px;
+}
+.notification{
+    height: 24px;
+}
+.rednotification{
+    position: relative; 
+}
+.red{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(174, 0, 0);
+    color: white;
+    font-size: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.me{
+    height: 32px;
+    border-radius: 16px;
+}
