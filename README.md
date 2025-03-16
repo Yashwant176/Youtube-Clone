@@ -1,2 +1,2 @@
 # Youtube-Clone
-Its just a normal clone of Youtube using HTML and CSS.
+It's just a normal clone of Youtube using HTML and CSS.
